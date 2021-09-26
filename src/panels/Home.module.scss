@@ -1,0 +1,96 @@
+.page {
+  width: 100%;
+  height: calc(100vh - var(--safe-area-inset-top) - var(--safe-area-inset-bottom) - var(--panelheader_height_android));
+  background-color: #222;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+  }
+
+  h1 {
+    width: 100%;
+    font-family: sans-serif;
+    position:absolute;
+    text-align:center;
+    color:white;
+  }
+
+  .mainText {
+    font-size: 40px;
+    top: 40%;
+  }
+
+  .subText {
+    font-size: 30px;
+    font-weight: normal;
+    top: 60%;
+  }
+
+  .subText span {
+    font-size: 35px;
+  }
+
+  .buttonContainer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 85%;
+  }
+
+  button {
+    padding: 13px 28px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    transition: background-color 200ms linear;
+  }
+
+  button span {
+    display: block;
+    float: left;
+  }
+
+  .greenButton {
+    background-color: #4CAF50;
+  }
+  .greenButton:hover {
+    background-color: #3e8e41;
+  }
+  .redButton {
+    background-color: #db6247;
+  }
+  .redButton:hover {
+    background-color: #cc5338;
+  }
+  path {
+    stroke-linecap: square;
+    stroke: white;
+    stroke-width: 0.5px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .mainText {
+      font-size: 35px;
+    }
+    .subText {
+      font-size: 28px;
+    }
+    .subText span {
+      font-size: 30px;
+    }
+    button {
+      font-size: 18px;
+    }
+  }
+}
